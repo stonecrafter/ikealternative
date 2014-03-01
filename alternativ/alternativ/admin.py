@@ -1,5 +1,4 @@
 from django.contrib import admin
-from alternativ.models import IkeaItem, NonIkeaItem
+from alternativ.models import Item
 
-admin.site.register(IkeaItem)
-admin.site.register(NonIkeaItem)
+admin.site.register(Item)

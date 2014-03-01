@@ -1,3 +1,5 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IKEALTERNATIVE</title>
 	<link rel="stylesheet" href="style.css">
+	<!-- template for static file -->
+	<link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
 	<div id="container">
@@ -13,67 +17,25 @@
 		</div>
 		<h2 id="new">I need a new...</h2>
 		<div id="itembox">
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">ARM CHAIR</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">COUCH</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">COFFEE TABLE</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">DESK</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">BED</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">DINING TABLE</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">DINING CHAIR</div>
-			</div>
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">SHELF</div>
-			</div>
+			{% if types %}
+	    		{% for type in types %}
+	    			<div class="item">
+						<div class="box"></div>
+						<div class="label">{{type}}</div>
+					</div>
+	    		{% endfor %}
+			{% else %}
+	    		<p>SOMETHING IS WRONG :'(</p>
+			{% endif %}
 		</div>
-		<div id="load"></div>
 	</div>
+
 	<script>
 		window.onload = function () {
 			var boxes = document.getElementsByClassName('box');
 			for (var i = 0; i < boxes.length; i++) {
 				boxes[i].addEventListener('click', newPage, true);
 			}
-		}
-		function newPage(e) {
-			// Remove homepage elements
-			var title = document.getElementById('new')
-			  , load = document.getElementById('load')
-			  , back = document.createElement('div')
-			  , backText = document.createTextNode('Return Home')
-			  , item = e.target.nextElementSibling.innerHTML;
-			console.log(e.target.nextElementSibling.innerHTML);
-			title.parentNode.removeChild(title);
-			document.getElementById('itembox').innerHTML = '';
-			// Add new page elements
-			back.setAttribute("class", "return");
-			back.addEventListener('click', homePage, true);
-			back.appendChild(backText);
-			document.getElementById('header').appendChild(back);
-			load.innerHTML = '<div class="result"><h4>You selected:</h4><div class="result-box"></div><div class="info"><h1>' + item + '</h1><p>Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here. Lorem ipsum description text goes here.</p></div></div><div class="suggestions"><h3>Your IKEAlternatives...</h3><div class="item"><div class="box"></div><div class="label">OPTION 1</div></div><div class="item"><div class="box"></div><div class="label">OPTION 2</div></div><div class="item"><div class="box"></div><div class="label">OPTION 3</div></div><div class="item"><div class="box"></div><div class="label">OPTION 4</div></div></div><div class="refine"><h4>Or, refine your search</h4><select name="price"><option value="volvo" selected="selected">Price</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="style"><option value="volvo" selected="selected">Style</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="colour"><option value="volvo" selected="selected">Colour</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="material"><option value="volvo" selected="selected">Material</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="features"><option value="volvo" selected="selected">Features</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="max-width"><option value="volvo" selected="selected">Max-Width</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="max-length"><option value="volvo" selected="selected">Max-Length</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><select name="max-height"><option value="volvo" selected="selected">Max-Height</option><option value="saab">$</option><option value="mercedes">$$</option><option value="audi">$$$</option></select><input type="submit" value="Refine Search"></div>';
-		}
-		function homePage(e) {
-			document.getElementById('container').innerHTML = '<div id="header"><h1>What\'s Your IKEAlternative?</h1></div><h2 id="new">I need a new...</h2><div id="itembox"><div class="item"><div class="box"></div><div class="label">ARM CHAIR</div></div><div class="item"><div class="box"></div><div class="label">COUCH</div></div><div class="item"><div class="box"></div><div class="label">COFFEE TABLE</div></div><div class="item"><div class="box"></div><div class="label">DESK</div></div><div class="item"><div class="box"></div><div class="label">BED</div></div><div class="item"><div class="box"></div><div class="label">DINING TABLE</div></div><div class="item"><div class="box"></div><div class="label">DINING CHAIR</div></div><div class="item"><div class="box"></div><div class="label">SHELF</div></div><div id="load"></div>';
 		}
 	</script>
 </body>

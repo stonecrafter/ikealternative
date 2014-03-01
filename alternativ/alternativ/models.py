@@ -20,7 +20,7 @@ class Item(models.Model):
 	item_name = models.CharField(max_length=50)
 	item_link = models.URLField()
 	description = models.TextField()
-	subjective_input = models.TextField()
+	subjective_input = models.TextField(blank=True, null=True) # won't be done for MVP
 	store_address = models.CharField(max_length=150)
 	store_website = models.URLField()
 	store_address = models.CharField(max_length=150)

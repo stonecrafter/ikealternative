@@ -19,6 +19,7 @@ urlpatterns = patterns('',
 
     # other urls
     url(r'^$', views.index, name='index'),
-    url(r'^(?P<ikea_name>\w+)/$', views.detail, name='detail'),
-    url(r'^(?P<ikea_name>\w+)/(?P<non_ikea_name>\w+)/$', views.options, name='options')
+    # handle invalid url requests in the views functions below...
+    url(r'^(?P<type>\w+)/$', views.detail, name='detail'),
+    url(r'^(?P<type>\w+)/(?P<non_ikea>\w+)/$', views.options, name='options')
 )

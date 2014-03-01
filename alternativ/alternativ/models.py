@@ -2,25 +2,28 @@ from django.db import models
 
 # Create your models here.
 
-class IkeaItem(models.Model):
-	name = models.CharField(max_length=50, unique=True)
-	description = models.TextField()
-	opinion = models.TextField()
+class Item(models.Model):
 
-	def __unicode__(self):   # string representation for debugging
-		return self.name
+	TYPE_CHOICES = (
+    	('AC', 'Arm Chair'),
+    	('CO', 'Couch'),
+    	('CT', 'Coffee Table'),
+    	('DE', 'Desk'),
+    	('BE', 'Bed'),
+    	('DT', 'Dining Table'),
+    	('DC', 'Dining Chair'),
+    	('SH', 'Shelving')
+	)
 
-	# here can go custom methods operating on a single tuple, if needed...
-
-
-class NonIkeaItem(models.Model):
-	name = models.CharField(max_length=50)
-	description = models.TextField()
-	opinion = models.TextField()
 	store_name = models.CharField(max_length=50)
+	item_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
+	item_name = models.CharField(max_length=50)
+	item_link = models.URLField()
+	description = models.TextField()
+	subjective_input = models.TextField()
 	store_address = models.CharField(max_length=150)
 	store_website = models.URLField()
-	ikea_item = models.ForeignKey(IkeaItem, to_field='name')
+	store_address = models.CharField(max_length=150)
 
 	def __unicode__(self):   # string representation for debugging
 		return self.name

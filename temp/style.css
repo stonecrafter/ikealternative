@@ -1,0 +1,203 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background: #F9FF8A;
+	text-align: center;
+}
+
+/* Main Page Styling */
+
+nav {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+	background: #0C1229;
+	text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+h1 {
+	display: inline-block;
+}
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+.description {
+	width: 700px;
+	margin: 30px auto;
+	text-align: center;
+}
+.iconbox {
+	display: inline-block;
+	margin: 0 5px;
+	text-align: center;
+}
+.icon {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px;
+	background: #FFF;
+	border-radius: 50%;
+}
+.itembox {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+.item {
+	display: inline-block;
+	width: 150px;
+	margin: 10px;
+	background: #0C1229;
+	border-radius: 5px;
+
+}
+.item .icon {
+	width: 50px;
+	height: 50px;
+	margin: 15px 0 5px;
+}
+.item p {
+	width: 100%;
+	margin: 5px 0 15px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+/* Category Page Styling */
+
+h2 {
+	font-size: 32px;
+}
+h3 {
+	margin: 5px;
+	font-size: 14px;
+}
+h4 {
+	margin: 5px;
+	font-size: 12px;
+}
+.icon.large {
+	width: 80px;
+	height: 80px;
+	margin: 20px 0 10px;
+	background: #0C1229;
+}
+.category {
+	width: 700px;
+	margin: 10px auto;
+	font-size: 18px;
+	text-align: center;
+}
+.rec-box {
+	width: 700px;
+	margin: 20px auto;
+	text-align: center;
+}
+.rec {
+	display: inline-block;
+	width: 200px;
+	margin: 5px;
+	padding: 5px;
+	background: #E8EE79;
+	box-shadow: 0 0 0 1px #B5BB46;
+	vertical-align: top;
+}
+.rec .button {
+	margin: 5px 0;
+	padding: 5px 10px;
+	background: #B5BB46;
+	font-size: 14px;
+}
+.image {
+	width: 190px;
+	height: 100px;
+	margin: 0 auto;
+	background: #FFF;
+}
+.tall {
+	height: 150px;
+}
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	background: #0C1229;
+}
+
+/* Product Page Styling */
+
+.infobox {
+	width: 700px;
+	margin: 20px auto;
+}
+.infobox h2 {
+	margin: 10px 0 0 10px;
+	font-size: 24px;
+	text-align: left;
+}
+.product {
+	display: inline-block;
+	width: 400px;
+	margin-right: 10px;
+}
+.product .image {
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+}
+.product p {
+	margin: 10px 0 0 10px;
+	text-align: left;
+}
+.details {
+	display: inline-block;
+	width: 250px;
+	margin: 10px;
+	padding: 10px;
+	background: #B5BB46;
+	vertical-align: top;
+}
+.details .button {
+	margin: 10px;
+	padding: 10px 25px;
+}
+.location {
+	width: 230px;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+.map {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 5px;
+	background: #A4AA35;
+	vertical-align: middle;
+}
+.info {
+	display: inline-block;
+	width: 100px;
+	margin: 10px 0 0 10px;
+	vertical-align: middle;
+	text-align: left;
+}
+.store {
+	margin: -10px 0 10px;
+}
+.address {
+	font-size: 14px;
+}
+.address p {
+	margin: 0;
+}

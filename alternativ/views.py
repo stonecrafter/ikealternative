@@ -18,19 +18,20 @@ def index(request):
     })
     return HttpResponse(template.render(context))
 
-def detail(request, item_type):
+def detail(request, item):
 	template = loader.get_template('type.html')
 	# get ikea item
-	ikea_item = Item.objects.filter(store_name="IKEA", item_type__iexact="%s" % item_type)
+	ikea_item = Item.objects.filter(store_name="IKEA", item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[0]
 	# get 4 alternative items
-	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % item_type)[:4]
+	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[:4]
 	context = RequestContext(request, {
-        'item_type': Item.TYPE_CHOICES[int(item_type) - 1][1],
-		'ikea_item': ikea_item,
-		'alt_items': alt
+        'item_type': Item.TYPE_CHOICES[int(item) - 1][1],
+		'ikea_item': ikea_item.description,
+        'subj': ikea_item.subjective_input,
+		'alt_items': alt,
+        'code': item
 		})
 	return HttpResponse(template.render(context))
-	#return HttpResponse("You're looking at category: %s." % item_type)
 
 def options(request, item_type, item_name):
     return HttpResponse("Category: %s. ~~ Alternativ furniture item: %s" % (item_type, item_name))

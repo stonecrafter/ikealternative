@@ -64,19 +64,28 @@ html, body {
   max-width: 900px;
   width: 90%;
 }
+.tagline {
+	font-size:14px;
+	color:#999999;
+	letter-spacing:1px;
+
+}
 h1 {
 	margin: 15px 0;
-	font-size: 18px;
+	font-size: 28px;
 	display: inline-block;
+	letter-spacing: 3px;
+	font-weight: bold;
 }
 h2 {
 	margin-top: 30px;
 	text-align: center;
-	font-size: 30px;
+	letter-spacing: 2px;
+	font-size: 22px;
 }
 h3 {
 	margin: 30px 0;
-	font-size: 24px;
+	font-size: 18px;
 }
 h4 {
 	display: block;
@@ -94,7 +103,7 @@ h4 {
 }
 .box {
 	height: 150px;
-	border: 1px solid black;
+	border: 1px solid #999999;
 }
 .box:hover {
 	background: #EEE;
@@ -103,6 +112,8 @@ h4 {
 .label {
 	margin: 10px 0;
 	text-align: center;
+	font-size: 18px;
+	letter-spacing:2px;
 }
 .result {
 	margin-top: 30px;

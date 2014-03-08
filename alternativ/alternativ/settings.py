@@ -1,5 +1,8 @@
 import os
+import mimetypes
 # Django settings for alternativ project.
+
+mimetypes.add_type("image/svg+xml", ".svg", True)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG

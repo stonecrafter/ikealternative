@@ -1,25 +1,4 @@
 from django.db import models
-#from csvImporter.model import CsvModel
-
-# for CSV import
-# class MyCSvModel(CsvModel):
-# 	store_name = CharField()
-# 	store_id = IntegerField()
-# 	item_type = CharField()
-# 	item_name = CharField()
-# 	item_link = CharField()
-# 	description = CharField()
-# 	subjective_input = CharField()
-# 	store_website = CharField()
-# 	store_address = CharField()
-# 	city = CharField()
-# 	province = CharField()
-# 	postal_code = CharField()
-# 	phone_number = CharField()
-
-# 	class Meta:
-# 		delimiter = ";"
-# 		dbModel = Item
 
 
 # the actual items model to store
@@ -36,6 +15,7 @@ class Item(models.Model):
     	(8, 'Shelving')
 	)
 
+	id = models.IntegerField(primary_key=True)
 	store_name = models.CharField(max_length=50)
 	store_id = models.IntegerField()
 	item_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
@@ -51,4 +31,4 @@ class Item(models.Model):
 	phone_number = models.CharField(max_length=20)
 
 	def __unicode__(self):   # string representation for debugging
-		return self.name
+		return self.item_name

@@ -17,16 +17,14 @@
 		</div>
 		<h2 id="new">I need a new...</h2>
 		<div id="itembox">
-			{% if types %}
-	    		{% for type in types %}
-	    			<div class="item">
-						<div class="box"></div>
-						<div class="label">{{type}}</div>
+    		{% for type, code in types.items %}
+    			<div class="item">
+					<div class="box">
+						<embed src="static/00_{{code}}-01.svg" type="image/svg+xml" height="150" />
 					</div>
-	    		{% endfor %}
-			{% else %}
-	    		<p>SOMETHING IS WRONG :'(</p>
-			{% endif %}
+					<div class="label">{{type}}</div>
+				</div>
+    		{% endfor %}
 		</div>
 	</div>
 

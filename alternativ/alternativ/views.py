@@ -6,8 +6,14 @@ from django.shortcuts import render
 def index(request):
     template = loader.get_template('index.html')
     context = RequestContext(request, {
-        'types': ['ARM CHAIR', 'COUCH', 'COFFEE TABLE', 'DESK', 'BED',
-        'DINING TABLE', 'DINING CHAIR', 'SHELVING'],
+        'types': {'ARM CHAIR': '01', 
+        		  'COUCH': '02', 
+        		  'COFFEE TABLE': '03', 
+        		  'DESK': '04', 
+        		  'BED': '05',
+        		  'DINING TABLE': '06', 
+        		  'DINING CHAIR': '07', 
+        		  'SHELVING': '08'},
     })
     return HttpResponse(template.render(context))
 
@@ -22,7 +28,7 @@ def detail(request, item_type):
 		'alt_items': alt
 		})
 	#return HttpResponse(template.render(context))
-    return HttpResponse("You're looking at category: %s." % item_type)
+	return HttpResponse("You're looking at category: %s." % item_type)
 
 def options(request, item_type, item_name):
     return HttpResponse("Category: %s. ~~ Alternativ furniture item: %s" % (item_type, item_name))

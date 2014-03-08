@@ -5,14 +5,14 @@ from django.db import models
 class Item(models.Model):
 
 	TYPE_CHOICES = (
-    	(1, 'Arm Chair'),
-    	(2, 'Couch'),
-    	(3, 'Coffee Table'),
-    	(4, 'Desk'),
-    	(5, 'Bed'),
-    	(6, 'Dining Table'),
-    	(7, 'Dining Chair'),
-    	(8, 'Shelving')
+    	('01', 'ARM CHAIR'),
+    	('02', 'COUCH'),
+    	('03', 'COFFEE TABLE'),
+    	('04', 'DESK'),
+    	('05', 'BED'),
+    	('06', 'DINING TABLE'),
+    	('07', 'DINING CHAIR'),
+    	('08', 'SHELVING')
 	)
 
 	id = models.IntegerField(primary_key=True)

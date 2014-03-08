@@ -23,8 +23,9 @@ def detail(request, item_type):
 	# get ikea item
 	ikea_item = Item.objects.filter(store_name="IKEA", item_type__iexact="%s" % item_type)
 	# get 4 alternative items
-	alt = Item.objects.filter(store_name!="IKEA", item_type__iexact="%s" % item_type)[:4]
+	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % item_type)[:4]
 	context = RequestContext(request, {
+        'item_type': Item.TYPE_CHOICES[int(item_type) - 1][1],
 		'ikea_item': ikea_item,
 		'alt_items': alt
 		})

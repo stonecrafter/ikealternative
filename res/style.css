@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -25,7 +25,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, section {
 	display: block;
 }
 body {
@@ -64,19 +64,32 @@ html, body {
   max-width: 900px;
   width: 90%;
 }
+.tagline {
+	font-size:14px;
+	color:#999999;
+	letter-spacing:1px;
+
+}
+nav{
+display:inline-block;
+float:right;
+}
 h1 {
 	margin: 15px 0;
-	font-size: 18px;
+	font-size: 28px;
 	display: inline-block;
+	letter-spacing: 3px;
+	font-weight: bold;
 }
 h2 {
 	margin-top: 30px;
 	text-align: center;
-	font-size: 30px;
+	letter-spacing: 2px;
+	font-size: 22px;
 }
 h3 {
 	margin: 30px 0;
-	font-size: 24px;
+	font-size: 18px;
 }
 h4 {
 	display: block;
@@ -86,6 +99,10 @@ h4 {
 #itembox {
 	margin: 30px auto;
 	text-align: center;
+	position:static;
+}
+#itembox2 {
+	margin: 30px auto;
 }
 .item {
 	width: 200px;
@@ -94,7 +111,7 @@ h4 {
 }
 .box {
 	height: 150px;
-	border: 1px solid black;
+	border: 1px solid #999999;
 }
 .box:hover {
 	background: #EEE;
@@ -103,6 +120,8 @@ h4 {
 .label {
 	margin: 10px 0;
 	text-align: center;
+	font-size: 18px;
+	letter-spacing:2px;
 }
 .result {
 	margin-top: 30px;
@@ -137,4 +156,37 @@ h4 {
 .return:hover {
 	background: #EEE;
 	cursor: pointer;
+}
+a:link{
+	color:#0066CC;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:visited {
+	color:#3399CC;
+	text-decoration:none;
+}
+.right {
+	float:right;
+}
+p {
+text-align:left;
+
+}
+.left-column {
+	float: left;
+	width:40%;
+	position:relative;
+	display:inline-block;
+	
+}
+.right-column {
+	float:right;
+	width:50%;
+	position:relative;
+	display:inline-block;
+}
+#other-options{
+position:static;
+display:block;
 }

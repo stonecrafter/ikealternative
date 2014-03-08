@@ -111,7 +111,7 @@ ROOT_URLCONF = 'alternativ.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'alternativ.wsgi.application'
 
-PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
+PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 
 STATIC_URL = '/static/'
 

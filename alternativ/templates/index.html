@@ -1,0 +1,43 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IKEALTERNATIVE</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- template for static file -->
+	<link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h1>Find Your ÅLTERNATÏV</h1>
+		</div>
+		<p class="tagline"> Are you addicted to that ubiquitous Swedish flat-pack furniture store?
+		We get it.  We’ve been there.</p>
+		<p class="tagline">But if you’re ready for a change, you’ve come to the right place.</p>
+		<h2 id="new">What are you looking for?</h2>
+		<div id="itembox">
+    		{% for type, code in types.items %}
+    			<div class="item">
+					<div class="box">
+						<embed src="static/00_{{code}}-01.svg" type="image/svg+xml" height="150" />
+					</div>
+					<div class="label">{{type}}</div>
+				</div>
+    		{% endfor %}
+		</div>
+	</div>
+
+	<script>
+		window.onload = function () {
+			var boxes = document.getElementsByClassName('box');
+			for (var i = 0; i < boxes.length; i++) {
+				boxes[i].addEventListener('click', newPage, true);
+			}
+		}
+	</script>
+</body>
+</html>

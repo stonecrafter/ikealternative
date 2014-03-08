@@ -6,7 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IKEALTERNATIVE</title>
-	<link rel="stylesheet" href="style.css">
 	<!-- template for static file -->
 	<link rel="stylesheet" href="{% static "style.css" %}">
 </head>
@@ -22,9 +21,11 @@
 		<div id="itembox">
     		{% for type, code in types.items %}
     			<div class="item">
-					<div class="box">
-						<embed src="static/00_{{code}}-01.svg" type="image/svg+xml" height="150" />
-					</div>
+					<a href="/02">
+						<div class="box" id="{{type}}" onClick="alert()">
+							<embed src="static/00_{{code}}-01.svg" type="image/svg+xml" height="150" onClick="alert()"/>
+						</div>
+					</a>
 					<div class="label">{{type}}</div>
 				</div>
     		{% endfor %}
@@ -32,11 +33,16 @@
 	</div>
 
 	<script>
-		window.onload = function () {
-			var boxes = document.getElementsByClassName('box');
-			for (var i = 0; i < boxes.length; i++) {
-				boxes[i].addEventListener('click', newPage, true);
-			}
+		var a = document.getElementById("Layer_1");
+			a.addEventListener("load",function(){
+            	var svgDoc = a.contentDocument; //get the inner DOM of alpha.svg
+            	var delta = svgDoc.getElementById("delta"); //get the inner element by id
+            	delta.addEventListener("click",function(){alert('hello world!')},false);    //add behaviour
+        	},false);
+		
+
+		newLoc = function(type) {
+			alert(type);
 		}
 	</script>
 </body>

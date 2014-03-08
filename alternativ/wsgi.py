@@ -25,9 +25,13 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "alternativ.settings")
 # file. This includes Django's development server, if the WSGI_APPLICATION
 # setting points here.
 from django.core.wsgi import get_wsgi_application
-from dj_static import Cling
 
-application = Cling(get_wsgi_application())
+# FOR DEPLOYMENT ONLY #
+# from dj_static import Cling
+# application = Cling(get_wsgi_application())
+
+# COMMENT THIS OUT FOR DEPLOYMENT AND UNCOMMENT THE ABOVE
+application = get_wsgi_application()
 
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication

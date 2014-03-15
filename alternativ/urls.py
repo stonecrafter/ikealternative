@@ -20,6 +20,6 @@ urlpatterns = patterns('',
     # other urls
     url(r'^$', views.index, name='index'),
     # handle invalid url requests in the views functions below...
-    url(r'^(?P<item_type>\w+)/$', views.detail, name='detail'),
+    url(r'^(?P<item>\w+)/$', views.detail, name='detail'),
     url(r'^(?P<type>\w+)/(?P<non_ikea>\w+)/$', views.options, name='options')
 )

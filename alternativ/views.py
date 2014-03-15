@@ -48,6 +48,7 @@ def options(request, item_type, item):
     # get the item
     item = Item.objects.get(id=item)
     store = Store.objects.get(store_name=item.store_name)
+    full_address = store.store_address + " " + store.city + " " + store.province + " " + store.postal_code
     context = RequestContext(request, {
         # item specific
         'item_code': item,
@@ -64,6 +65,7 @@ def options(request, item_type, item):
         'city': store.city,
         'province': store.province,
         'postal_code': store.postal_code,
-        'phone': store.phone_number
+        'phone': store.phone_number,
+        'full_address': full_address
         })
     return HttpResponse(template.render(context))

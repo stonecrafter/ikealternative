@@ -10,6 +10,9 @@
 </head>
 <body>
 	<div id="container">
+		<div class="nav">
+			{% include "header.html" %}
+		</div>
 		<div id="header">
 			<h1>Find Your ÅLTERNATÏV</h1>
 			<nav>
@@ -31,24 +34,12 @@
 
 		<div class="suggestions">
 			<h3>Your IKEAlternatives...</h3>
+			{% for item in alt_items %}
 			<div class="item">
 				<div class="box"></div>
-				<div class="label">OPTION 1</div>
+				<div class="label">{{item.item_name}}</div>
 			</div>
-
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">OPTION 2</div>
-			</div>
-
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">OPTION 3</div>
-			</div><div class="item">
-
-			<div class="box"></div>
-				<div class="label">OPTION 4</div>
-			</div>
+			{% endfor %}
 		</div>
 			
 		

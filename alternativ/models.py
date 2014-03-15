@@ -17,6 +17,7 @@ class Item(models.Model):
 	store_name = models.ForeignKey('Store', to_field='store_name')
 	item_type = models.CharField(max_length=20, choices=TYPE_CHOICES)
 	item_name = models.CharField(max_length=50)
+	price_multipler = models.IntegerField()
 	item_link = models.URLField()
 	description = models.TextField()
 	subjective_input = models.TextField(blank=True, null=True)
@@ -38,7 +39,7 @@ class Store(models.Model):
     	('07', 'BO CONCEPT')
 	)
 	
-	store_name = models.CharField(max_length=50, unique=True)
+	store_name = models.CharField(max_length=20, choices=TYPE_CHOICES, unique=True)
 	store_website = models.URLField()
 	store_address = models.CharField(max_length=150)
 	city = models.CharField(max_length=30)

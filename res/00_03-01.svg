@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="150 50 500 500" enable-background="new 150 50 500 500" xml:space="preserve">
 <g id="Layer_2">
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="204" y1="190.022" x2="204" y2="423"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="182" y1="188" x2="454" y2="213"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="454" y1="177" x2="454" y2="469"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="618" y1="177" x2="454" y2="213"/>
-	
-		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="603.597" y1="180.162" x2="603.597" y2="398.667"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="579.862,188 
-		579.862,395 603.597,398.667 618,395 618,146 	"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="425.961,210.423 425.961,467 454,469 
-		471.057,460 471.057,209.256 	"/>
-	<polygon fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="7" points="618,146 454,177 182,156 370,127 	"/>
-	
-		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="373.941" y1="205.642" x2="373.941" y2="363.333"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="353.026,203.719 353.026,360 
-		373.941,363.333 387.015,360 387.015,206.843 	"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="182,156 182,420 
-		204,423 224,413 224,193.75 	"/>
+	<rect x="311.073" y="249.836" width="3" height="103.922"/>
+	<rect x="302.505" y="253.01" transform="matrix(0.9958 0.0915 -0.0915 0.9958 24.8209 -32.196)" width="121.838" height="3"/>
+	<rect x="422.587" y="244.027" width="3" height="130.248"/>
+	<rect x="459.163" y="214.609" transform="matrix(0.2142 0.9768 -0.9768 0.2142 608.2094 -251.9009)" width="3" height="74.894"/>
+	<rect x="489.315" y="245.438" width="3" height="97.466"/>
+	<polygon points="490.889,344.434 478.729,342.554 478.729,247.434 481.729,247.434 481.729,339.981 490.742,341.375 
+		495.739,340.102 495.739,228.7 498.739,228.7 498.739,342.434 	"/>
+	<polygon points="424.408,375.802 410.079,374.78 410.079,258.936 413.079,258.936 413.079,371.987 423.766,372.749 
+		430.194,369.357 430.194,258.416 433.194,258.416 433.194,371.166 	"/>
+	<path d="M424.17,245.538l-0.198-0.015l-121.327-9.367l-0.113-2.978l84.029-12.962l110.792,8.488l0.164,2.97L424.17,245.538z
+		 M315.817,234.164l108.187,8.353l61.825-11.687l-99.152-7.597L315.817,234.164z"/>
+	<rect x="386.876" y="256.804" width="3" height="70.338"/>
+	<polygon points="388.447,328.672 377.547,326.936 377.547,255.945 380.547,255.945 380.547,324.375 388.306,325.611 
+		392.708,324.489 392.708,257.339 395.708,257.339 395.708,326.821 	"/>
+	<polygon points="312.83,355.307 301.26,353.728 301.26,233.16 304.26,233.16 304.26,351.108 312.317,352.209 319.995,348.369 
+		319.995,249.999 322.995,249.999 322.995,350.223 	"/>
 </g>
 </svg>

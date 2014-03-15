@@ -1,0 +1,55 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{item_name}}</title>
+	<link rel="stylesheet" href="{% static "style.css" %}">
+</head>
+<body>
+	<div id="container">
+		<div class="nav">
+			{% include "header.html" %}
+		</div>
+		<div id="header">
+			<h1>Find Your ÅLTERNATÏV</h1>
+			<nav>
+				<a href="/">Home</a>  |  <a href="/">Back</a>
+			</nav>
+		</div>
+		<div class="result">
+			<h4>You selected:</h4>
+			<div class="result-box">
+				<img src="/static/00_{{type_code}}-01.svg" width="125" height="125"/>
+			</div>
+			<div class="info">
+				<!-- all the item stuff, think of this as the template "API" :] -->
+				<h1>{{item_name}}</h1>
+				<p>Description: {{item_desc}}</p>
+				<br>
+				<p>Subjective Input: {{subj}}</p>
+				<br>
+				<p>Price Range: {{price}}</p>
+				<br>
+				<a href="{{item_link}}">Link to Item on {{store_name}}'s Website.</a>
+			</div>
+			<br><br><br>
+			<div class="store">
+				<!-- store API -->
+				<h1>Store Information: {{store_name}}</h1>
+				<p>Address: {{store_address}}, {{city}} {{province}}, {{postal_code}}</p>
+				<br>
+				<a href="{{store_website}}">Website</a>
+				<br><br>
+				<p>Phone Number: {{phone}}</p>
+			</div>
+		</div>
+		<div id="load"></div>
+	</div>
+	<script>
+		
+	</script>
+</body>
+</html>

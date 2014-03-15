@@ -1,8 +1,15 @@
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 from django.shortcuts import render
-from alternativ.models import Item
+from alternativ.models import Item, Store
 # VIEWS: return an HttpResponse... or raise Http404 if invalid request.
+
+
+def about(request):
+    template = loader.get_template('about.html')
+    context = RequestContext(request, {})
+    return HttpResponse(template.render(context))
+
 
 def index(request):
     template = loader.get_template('index.html')
@@ -18,12 +25,13 @@ def index(request):
     })
     return HttpResponse(template.render(context))
 
+
 def detail(request, item):
 	template = loader.get_template('type.html')
 	# get ikea item
 	ikea_item = Item.objects.filter(store_name="IKEA", item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[0]
-	# get 6 alternative items
-	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[:6]
+	# get all the alternative items
+	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])
 	context = RequestContext(request, {
         'item_type': Item.TYPE_CHOICES[int(item) - 1][1],
 		'ikea_item': ikea_item.description,
@@ -33,5 +41,29 @@ def detail(request, item):
 		})
 	return HttpResponse(template.render(context))
 
-def options(request, item_type, item_name):
-    return HttpResponse("Category: %s. ~~ Alternativ furniture item: %s" % (item_type, item_name))
+
+def options(request, item_type, item):
+    # item_type can be used for a back button if desired
+    template = loader.get_template('option.html')
+    # get the item
+    item = Item.objects.get(id=item)
+    store = Store.objects.get(store_name=item.store_name)
+    context = RequestContext(request, {
+        # item specific
+        'item_code': item,
+        'type_code': item_type,
+        'item_name': item.item_name,
+        'item_desc': item.description,
+        'subj': item.subjective_input,
+        'price': item.price_multipler,
+        'store_name': item.store_name,
+        'item_link': item.item_link,
+        # store specific
+        'store_address': store.store_address,
+        'store_website': store.store_website,
+        'city': store.city,
+        'province': store.province,
+        'postal_code': store.postal_code,
+        'phone': store.phone_number
+        })
+    return HttpResponse(template.render(context))

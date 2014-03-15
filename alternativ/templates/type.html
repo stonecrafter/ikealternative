@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Interactive Prototype</title>
+	<title>Alternativs for {{item_type}}</title>
 	<link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
@@ -35,18 +35,17 @@
 		<div class="suggestions">
 			<h3>Your IKEAlternatives...</h3>
 			{% for item in alt_items %}
-			<div class="item">
-				<div class="box"></div>
-				<div class="label">{{item.item_name}}</div>
-			</div>
+			<a href="{{item.id}}">
+				<div class="item">
+					<div class="box"></div>
+					<div class="label">{{item.item_name}}</div>
+				</div>
+			</a>
 			{% endfor %}
 		</div>
 			
 		
 		<div id="load"></div>
 	</div>
-	<script>
-		
-	</script>
 </body>
 </html>

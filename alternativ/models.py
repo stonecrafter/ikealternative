@@ -28,7 +28,6 @@ class Item(models.Model):
 
 class Store(models.Model):
 	# stores
-	
 	TYPE_CHOICES = (
     	('01', 'IKEA'),
     	('02', 'CB2'),

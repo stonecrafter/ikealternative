@@ -22,8 +22,8 @@ def detail(request, item):
 	template = loader.get_template('type.html')
 	# get ikea item
 	ikea_item = Item.objects.filter(store_name="IKEA", item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[0]
-	# get 4 alternative items
-	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[:4]
+	# get 6 alternative items
+	alt = Item.objects.exclude(store_name="IKEA").filter(item_type__iexact="%s" % Item.TYPE_CHOICES[int(item) - 1][1])[:6]
 	context = RequestContext(request, {
         'item_type': Item.TYPE_CHOICES[int(item) - 1][1],
 		'ikea_item': ikea_item.description,

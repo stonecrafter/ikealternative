@@ -1,32 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="150 50 500 500" enable-background="new 150 50 500 500" xml:space="preserve">
 <g id="Layer_2">
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="200,173.333 200,192.667 520,214 	"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="196" y1="173.333" x2="196" y2="396.5"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="204.115,192.941 204.115,394 196,396.5 
-		188.5,394 188.5,171 	"/>
-	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M188.5,394"/>
-	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M196,396.5"/>
-	
-		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="529.333" y1="192.667" x2="529.333" y2="449.999"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="606.666" y1="171" x2="606.666" y2="388.665"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="520,192.667 520,447.833 529.333,449.999 
-		538.666,445.167 538.666,192.667 	"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="595.333,194.5 595.333,387 
-		606.666,388.665 612.666,384.833 612.666,168.25 	"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="536.25" y1="194.5" x2="536.25" y2="186.5"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="536.25,186.5 
-		617.5,161.5 617.5,167 536.975,194.255 	"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="536.25,194.5 181,171 181,165.5 
-		536.25,186.5 	"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="606.666" y1="190.5" x2="538.666" y2="214"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="181,165.5 309.333,146.667 617.5,161.5 	
+	<polygon points="494.123,233.5 241.036,216.628 241.036,200.018 244.036,200.018 244.036,213.821 494.322,230.507 	"/>
+	<rect x="237.89" y="200.018" width="3" height="175.525"/>
+	<polygon points="239.372,377.118 231.991,374.658 231.991,198.183 234.991,198.183 234.991,372.496 239.408,373.968 
+		244.272,372.47 244.272,215.44 247.272,215.44 247.272,374.685 	"/>
+	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M233.491,373.577"/>
+	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M239.39,375.543"/>
+	<rect x="500.063" y="215.225" width="3" height="202.396"/>
+	<rect x="560.887" y="198.183" width="3" height="171.198"/>
+	<polygon points="501.763,419.207 492.723,417.109 492.723,215.225 495.723,215.225 495.723,414.727 501.364,416.035 
+		507.403,412.909 507.403,215.225 510.403,215.225 510.403,414.733 	"/>
+	<polygon points="562.723,370.946 551.974,369.367 551.974,216.666 554.974,216.666 554.974,366.775 562.051,367.815 
+		565.606,365.545 565.606,196.02 568.606,196.02 568.606,367.189 	"/>
+	<rect x="505.504" y="210.374" width="3" height="6.292"/>
+	<polygon points="506.634,218.375 505.672,215.533 569.408,193.961 569.408,192.742 506.012,212.249 505.129,209.381 
+		572.408,188.68 572.408,196.112 	"/>
+	<polygon points="506.905,218.163 226.092,199.587 226.092,192.266 507.093,208.876 506.915,211.872 229.092,195.448 
+		229.092,196.778 507.103,215.169 	"/>
+	<rect x="534.145" y="194.468" transform="matrix(0.3269 0.9451 -0.9451 0.3269 571.0942 -356.2734)" width="3" height="56.587"/>
+	<polygon points="227.81,195.341 227.374,192.373 328.455,177.539 328.601,177.546 570.98,189.213 570.836,192.209 328.602,180.55 	
 		"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="309.358" y1="199.958" x2="309.358" y2="347"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="315.376,200.358 315.376,345.333 
-		309.358,348.625 301.726,347 301.726,199.449 	"/>
+	<rect x="327.048" y="220.959" width="3" height="115.651"/>
+	<polygon points="328.779,339.472 321.045,337.824 321.045,220.559 324.045,220.559 324.045,335.396 328.316,336.306 
+		331.781,334.41 331.781,221.273 334.781,221.273 334.781,336.189 	"/>
 </g>
 </svg>

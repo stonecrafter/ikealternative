@@ -19,7 +19,7 @@
 		<div class="result">
 			<h4>You selected:</h4>
 			<div class="result-box">
-				<object height="125" width="125" data="/static/00_{{code}}-01.svg" type="image/svg+xml"></object>
+				<img height="120" width="120" src="/static/00_{{code}}-01.svg" />
 			</div>
 			<div class="info">
 				<h1>{{item_type}}</h1>
@@ -31,11 +31,13 @@
 
 		<div class="suggestions">
 			<h3>Your IKEAlternatives...</h3>
-			{% for item in alt_items %}
-			<a href="{{item.id}}">
+			{% for alt, store_code in alt_items.items %}
+			<a href="{{alt.id}}">
 				<div class="item">
-					<div class="box"></div>
-					<div class="label">{{item.item_name}}</div>
+					<div class="box">
+						<img src="/static/img/{{store_code}}_{{code}}-01.jpg" height="150"/>
+					</div>
+					<div class="label">{{alt.item_name}}</div>
 				</div>
 			</a>
 			{% endfor %}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>&Aring;lternat&iuml;v</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
   <div id="wrap">
@@ -12,32 +12,34 @@
     <h1>&Aring;LT</h1>
     <div class="product">
       <div class="pic">
-        <img src="blah" alt="" width="300" height="300">
+        <img src="/static/img/{{store_code}}_{{type_code}}-01.jpg" width="300" height="300"/>
       </div>
       <div class="desc">
-        <h2>Product Name</h2>
-        <h3>Brand Name</h3>
+        <a href="{{item_link}}"><h2>{{item_name}}</h2></a>
+        <h3>{{store_name}}</h3>
         <div class="price">
-          Place label etc
+          {{price}}
         </div>
-        <p>This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description.</p>
-        <p>This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description. This is the description.</p>
+        <p>{{item_desc}}</p>
+        <p>{{subj}}</p>
       </div>
     </div>
     <div class="store">
       <div class="retail">
-        <h4>Store Name</h4>
-        <p>Address Address</p>
-        <p>Phone Number</p>
+        <a href="{{store_website}}"><h4>{{store_name}}</h4></a>
+        <p>{{full_address}}</p>
+        <p>{{phone}}</p>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        {% easy_map full_address 170 170 %}
+      </div>
     </div>
 </div>
 <nav>
-  <a href="../about">About</a>
-  <a href="../">Home</a>
+  <a href="/about">About</a>
+  <a href="/">Home</a>
   <div class="back">
-    <a href="../">Back</a>
+    <a href="/{{type_code}}">Back</a>
   </div>
 </nav>
 </body>

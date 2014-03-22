@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   height: 100%;
   text-align: center;
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
@@ -32,6 +32,10 @@ h1 {
   border-bottom: 1px solid #333;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+h1:hover {
+  color: #222;
+  cursor: pointer;
 }
 h1:nth-child(2) {
   display: none;
@@ -71,14 +75,15 @@ nav a {
   vertical-align: middle;
   text-decoration: none;
 }
-nav a:hover {
-  cursor: pointer;
+a {
+  text-decoration: none;
 }
 .item {
   display: inline-block;
   width: 150px;
   margin: 10px 20px;
   padding: 5px;
+  vertical-align: top;
 }
 .category {
   overflow: hidden;
@@ -90,7 +95,38 @@ nav a:hover {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-
+#armchair {
+  background: url(armchair-black.svg);
+  background-size: contain;
+}
+#shelf {
+  background: url(shelf-black.svg);
+  background-size: contain;
+}
+#chair {
+  background: url(chair-black.svg);
+  background-size: contain;
+}
+#dining {
+  background: url(diningtable-black.svg);
+  background-size: contain;
+}
+#bed {
+  background: url(bed-black.svg);
+  background-size: contain;
+}
+#desk {
+  background: url(desk-black.svg);
+  background-size: contain;
+}
+#coffee {
+  background: url(coffee-black.svg);
+  background-size: contain;
+}
+#couch {
+  background: url(couch-black.svg);
+  background-size: contain;
+}
 span {
   color: #FFF;
   display: block;
@@ -99,8 +135,8 @@ span {
   text-align: center;
   /*position: relative;*/
   /*top: 0;*/
-  -ms-transform: translateY(0); /* IE 9 */
-  -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -110,8 +146,8 @@ span {
 }
 .item:hover > .category {
   /*top: -6px;*/
-  -ms-transform: translateY(-6px); /* IE 9 */
-  -webkit-transform: translateY(-6px); /* Chrome, Safari, Opera */
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
   transform: translateY(-6px);
 }
 .item:hover > span {
@@ -139,16 +175,12 @@ h3 {
   height: 150px;
   vertical-align: middle;
 }
-.suggestions .choice {
-  /*width: 200px;
-  height: 200px;*/
-}
 .info {
   display: inline-block;
   vertical-align: middle;
   text-align: left;
 }
-.info > p {
+.info p {
   width: 500px;
   margin: 10px 0 0 10px;
   padding: 0;
@@ -188,6 +220,11 @@ h3 {
 .desc h2 {
   margin: -8px 0 0;
 }
+
+.desc a, .store a {
+  text-decoration: underline;
+  color: black;
+}
 .desc p {
   width: 380px;
   margin: 10px 0 0;
@@ -201,10 +238,10 @@ h3 {
 }
 .map {
   display: inline-block;
-  width: 380px;
+  width: 170px;
   height: 170px;
- /* margin-right: 210px;
-*/  vertical-align: middle;
+  margin-right: 210px;
+  vertical-align: middle;
 }
 .retail {
   display: inline-block;
@@ -227,49 +264,38 @@ h3 {
   float: left;
 }
 
-/*About Page Specific Styling */
+/* About Page Specific Styling */
 
-.around{
-   border-style: solid;
-   border-width: 1px;
-   width: 36px;
-   height: 36px;
-   border-radius: 18px;
-   text-align: center; 
-   margin-left: 50px;
- }
- 
- .left{
-   float: left;
- }
- 
- .point{
-	margin-left: 115px;
-   border-style: none;
-   font-size: 16px;
- }
- 
- .abouter{
-   margin-top: 10px;
- }
- 
- .lefter{
-   text-align: left;
- }
- 
- .person{
-   width: 150px;
-   height: auto;
-   margin: 25px;
-   float: left;
-   position: relative;
- }
- 
- .person h3 {
-	color:black;
-	text-align: center;
- }
- 
+.about {
+  margin-top: 15px;
+}
+.lefter {
+ text-align: left;
+ padding-bottom: 20px;
+}
+.points {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.around {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.point {
+  display: inline-block;
+  width: 620px;
+  margin-left: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  text-align: left;
+}
 
 /* Media Queries for Responsive Layout */
 

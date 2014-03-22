@@ -91,9 +91,9 @@ def options(request, item_type, item):
 	item = Item.objects.get(id=item)
 	store = Store.objects.get(store_name=item.store_name)
 	# sanity check URL
-	correct_type = Item.TYPE_CHOICES[int(item_type) - 1][1].capitalize()
-	#if item.item_type != correct_type:
-	#	raise Http404
+	correct_type = Item.TYPE_CHOICES[int(item_type) - 1][1].title()
+	if item.item_type != correct_type:
+		raise Http404
 	# get full address for Google Maps display
 	full_address = store.store_address + " " + store.city + " " + store.province + " " + store.postal_code
 	context = RequestContext(request, {

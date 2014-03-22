@@ -14,16 +14,38 @@
     <h1>&Aring;LT</h1>
     <p>It's time to start buying furniture that doesn't come in a flat pack box.</p>
     <div class="box">
-      {% for type, code in types.items %}
       <div class="item">
-        <div class="category" id="{{type}}">
-          <a href="/{{code}}">
-            <img src="static/00_{{code}}-01.svg" width="110%"/>
-          </a>
-        </div>
-        <span>{{type}}</span>
+        <div id="chair" class="category"></div>
+        <span>CHAIR</span>
       </div>
-      {% endfor %}
+      <div class="item">
+        <div id="armchair" class="category"></div>
+        <span>ARM CHAIR</span>
+      </div>
+      <div class="item">
+        <div id="coffee" class="category"></div>
+        <span>COFFEE TABLE</span>
+      </div>
+      <div class="item">
+        <div id="dining" class="category"></div>
+        <span>DINING TABLE</span>
+      </div>
+      <div class="item">
+        <div id="bed" class="category"></div>
+        <span>BED</span>
+      </div>
+      <div class="item">
+        <div id="desk" class="category"></div>
+        <span>DESK</span>
+      </div>
+      <div class="item">
+        <div id="couch" class="category"></div>
+        <span>COUCH</span>
+      </div>
+      <div class="item">
+        <div id="shelf" class="category"></div>
+        <span>SHELF</span>
+      </div>
     </div>     
   </div>
   <nav>

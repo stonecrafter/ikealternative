@@ -172,7 +172,7 @@ h2 {
   height: 36px;
   border-radius: 18px;
   text-align: center; 
-  margin-left: 85px;
+  margin-left: 50px;
 }
 
 .left{
@@ -181,8 +181,9 @@ h2 {
 
 .point{
   text-align: left;
-  margin-left: 150px;
+  margin-left: 115px;
   border-style: none;
+  font-size: 16px;
 }
 
 .abouter{
@@ -195,14 +196,12 @@ h2 {
 
 .person{
   width: 150px;
-  height: 200px;
+  height: auto;
   margin: 25px;
   float: left;
+  position: relative;
 }
 
-.people{
-  margin-top: 60px;
-}
 
 /* Media Queries for Responsive Layout */
 

@@ -1,4 +1,4 @@
-<!-- {% load staticfiles %} -->
+{% load staticfiles %}
 
 <!doctype html>
 <html lang="en">
@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About ALTERNATIV</title>
-	<link rel="stylesheet" href="../../new/style.css">
+	<link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
 	<div id="container">
@@ -26,22 +26,22 @@
 	</div>
 
 	<div class="box people">
-		<div class="person">
-			<img src="">
+		<a href="http://www.michaelwolo.com"><div class="person">
+			<img src="../../res/pencil.svg">
 			<h3>MICHÅEL</h3>
-		</div>
-		<div class="person">
-			<img src="">
+		</div></a>
+		<a href="http://www.amandamccusker.com"><div class="person">
+			<img src="../../res/brush.svg">
 			<h3>ÅMANDA</h3>
-		</div>
-		<div class="person">
-			<img src="">
+		</div></a>
+		<a href="http://www.fromtheothershore.me"><div class="person">
+			<img src="../../res/hammer.svg">
 			<h3>KÏRIEN</h3>
-		</div>
-		<div class="person">
-			<img src="">
+		</div></a>
+		<a href="http://www.emilymaemura.com"><div class="person">
+			<img src="../../res/allenkey.svg">
 			<h3>EMILÝ</h3>
-		</div>
+		</div></a>
 		
 
 	</div>
@@ -54,4 +54,4 @@
 </html>
 
 
-<!-- "{% static "style.css" %}" -->
+<!--  -->

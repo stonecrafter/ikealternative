@@ -75,6 +75,9 @@ nav a {
   vertical-align: middle;
   text-decoration: none;
 }
+a {
+  text-decoration: none;
+}
 .item {
   display: inline-block;
   width: 150px;
@@ -254,6 +257,50 @@ h3 {
 }
 .back {
   float: left;
+}
+
+/* About Page Specific Styling */
+
+.about {
+  margin-top: 15px;
+}
+.lefter {
+ text-align: left;
+ padding-bottom: 20px;
+}
+.points {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.around {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.point {
+  display: inline-block;
+  width: 610px;
+  margin-left: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  text-align: left;
+}
+.person {
+ width: 150px;
+ height: auto;
+ margin: 25px;
+ float: left;
+ position: relative;
+}
+.person h3 {
+  color:black;
+  text-align: center;
 }
 
 /* Media Queries for Responsive Layout */

@@ -6,6 +6,7 @@ html, body {
   padding: 0;
   min-height: 100%;
   text-align: center;
+  font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
 }
 #wrap {
   min-height: 100%;
@@ -18,7 +19,8 @@ html, body {
 h1 {
   width: 700px;
   color: #000;
-  font: bold 94px 'Century Gothic', Helvetica, Arial, sans-serif;
+  font-size: 94px;
+  font-weight: bold;
   margin: 10px auto 0;
   padding: 0 0 10px;
   letter-spacing: 20px;
@@ -38,7 +40,7 @@ p {
   margin: 0 auto 25px;
   padding: 10px 0;
   color: #000;
-  font: normal 14px 'Century Gothic', Helvetica, Arial, sans-serif;
+  font-size: 14px;
   border-bottom: 1px solid #000;
   letter-spacing: 1px;
 }
@@ -137,7 +139,33 @@ span {
   color: #000;
 }
 
-/* Media Queries */
+/* Category Page Specific Styling */
+
+h2 {
+  margin: 0 0 0 10px;
+  font-size: 26px;
+}
+.result {
+  margin: 20px auto;
+}
+.choice {
+  display: inline-block;
+  height: 150px;
+  vertical-align: middle;
+}
+.info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.info > p {
+  width: 500px;
+  margin: 10px 0 0 10px;
+  padding: 0;
+  border: none;
+}
+
+/* Media Queries for Responsive Layout */
 
 @media all and (max-width: 905px) {
   .box {

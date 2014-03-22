@@ -35,13 +35,19 @@ def invalid_url(item, cat=False):
 		raise Http404
 	# should only be two characters long
 	if len(item) != 2:
-		raise Http404
+		# that one edge case
+		if cat and num == 9:
+			return '09'
+		else:
+			raise Http404
 	# there are only 8 categories
 	if not cat and num not in range(1,9):
 		raise Http404
 	# there are only 54 items (yes, this should be changed...)
 	if cat and num not in range(9, 55):
 		raise Http404
+
+	return item
 
 
 def about(request):
@@ -84,7 +90,7 @@ def detail(request, item):
 def options(request, item_type, item):
 	# handle invalid urls
 	invalid_url(item_type)
-	invalid_url(item, True)
+	item = invalid_url(item, True)
 	# item_type can be used for a back button if desired
 	template = loader.get_template('option.html')
 	# get the item

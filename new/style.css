@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 html, body {
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   height: 100%;
   text-align: center;
   font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
@@ -58,14 +58,14 @@ nav, #wrap:after {
 }
 nav {
   width: 700px;
-  /*position: absolute;*/
-  /*left: 0;
-  right: 0;
-  bottom: 0;*/
   margin: 0 auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #222;
 }
-nav > a {
+nav a {
   display: inline;
   padding: 5px 10px;
   float: right;
@@ -131,8 +131,8 @@ span {
   text-align: center;
   /*position: relative;*/
   /*top: 0;*/
-  -ms-transform: translateY(0); /* IE 9 */
-  -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
   transform: translateY(0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -142,8 +142,8 @@ span {
 }
 .item:hover > .category {
   /*top: -6px;*/
-  -ms-transform: translateY(-6px); /* IE 9 */
-  -webkit-transform: translateY(-6px); /* Chrome, Safari, Opera */
+  -ms-transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
   transform: translateY(-6px);
 }
 .item:hover > span {
@@ -171,10 +171,6 @@ h3 {
   height: 150px;
   vertical-align: middle;
 }
-.suggestions .choice {
-  /*width: 200px;
-  height: 200px;*/
-}
 .info {
   display: inline-block;
   vertical-align: middle;
@@ -201,20 +197,26 @@ h3 {
 
 /* Product Page Specific Styling */
 
-
+.product {
+  width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+.pic {
+  display: inline-block;
+  width: 400px;
+}
+.desc {
+  display: inline-block;
+  width: 300px;
+}
+.back {
+  float: left;
+}
 
 /* Media Queries for Responsive Layout */
 
 @media all and (max-width: 905px) {
-  html, body {
-    height: 100%;
-  }
-  nav {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   .box {
     width: 70%;
   }

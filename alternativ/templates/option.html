@@ -4,53 +4,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{item_name}}</title>
-	<link rel="stylesheet" href="{% static "style.css" %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&Aring;lternat&iuml;v</title>
+  <link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1>Find Your ÅLTERNATÏV</h1>
-			<nav>
-				<a href="/">Home</a>  |  <a href="/{{type_code}}">Back</a>  |  <a href="/about">About</a>
-			</nav>
-		</div>
-		<div class="result">
-			<h4>You selected:</h4>
-			<div class="result-box">
-				<img src="/static/img/{{store_code}}_{{type_code}}-01.jpg" width="120" height="120"/>
-			</div>
-			<div class="info">
-				<!-- all the item stuff, think of this as the template "API" :] -->
-				<h1>{{item_name}}</h1>
-				<p>Description: {{item_desc}}</p>
-				<br>
-				<p>Subjective Input: {{subj}}</p>
-				<br>
-				<p>Price Range: {{price}}</p>
-				<br>
-				<a href="{{item_link}}">Link to Item on {{store_name}}'s Website.</a>
-			</div>
-			<br><br><br>
-			<div class="store">
-				<!-- store API -->
-				<h1>Store Information: {{store_name}}</h1>
-				<p>Address: {{store_address}}, {{city}} {{province}}, {{postal_code}}</p>
-				<br>
-				<a href="{{store_website}}">Website</a>
-				<br><br>
-				<p>Phone Number: {{phone}}</p>
-				<br>
-				<!-- google map -->
-				{% easy_map full_address 400 400 %}
-			</div>
-		</div>
-		<div id="load"></div>
-	</div>
-	<script>
-		
-	</script>
+  <div id="wrap">
+    <h1>&Aring;LTERNAT&Iuml;V</h1>
+    <h1>&Aring;LT</h1>
+    <div class="product">
+      <div class="pic">
+        <img src="/static/img/{{store_code}}_{{type_code}}-01.jpg" width="300" height="300"/>
+      </div>
+      <div class="desc">
+        <a href="{{item_link}}"><h2>{{item_name}}</h2></a>
+        <h3>{{store_name}}</h3>
+        <div class="price">
+          {{price}}
+        </div>
+        <p>{{item_desc}}</p>
+        <p>{{subj}}</p>
+      </div>
+    </div>
+    <div class="store">
+      <div class="retail">
+        <a href="{{store_website}}"><h4>{{store_name}}</h4></a>
+        <p>{{store_address}}</p>
+        <p>{{city}}, {{province}}</p>
+        <p>{{phone}}</p>
+      </div>
+      <div class="map">
+        {% easy_map full_address 380 170 %}
+      </div>
+    </div>
+</div>
+<nav>
+  <a href="/about">About</a>
+  <a href="/">Home</a>
+  <div class="back">
+    <a href="/{{type_code}}">Back</a>
+  </div>
+</nav>
 </body>
 </html>

@@ -176,7 +176,7 @@ h3 {
   vertical-align: middle;
   text-align: left;
 }
-.info > p {
+.info p {
   width: 500px;
   margin: 10px 0 0 10px;
   padding: 0;
@@ -204,11 +204,53 @@ h3 {
 }
 .pic {
   display: inline-block;
-  width: 400px;
+  width: 300px;
+  vertical-align: middle;
 }
 .desc {
   display: inline-block;
+  width: 380px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.desc h2 {
+  margin: -8px 0 0;
+}
+.desc p {
+  width: 380px;
+  margin: 10px 0 0;
+  padding: 0;
+  border: none;
+}
+.store {
+  width: 700px;
+  margin: 0 auto 20px;
+  text-align: right;
+}
+.map {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  margin-right: 210px;
+  border: 1px solid black;
+  vertical-align: middle;
+}
+.retail {
+  display: inline-block;
   width: 300px;
+  padding-right: 20px;
+  vertical-align: middle;
+  text-align: right;
+}
+.retail h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+}
+.retail p {
+  width: 300px;
+  margin: 0 0 5px;
+  padding: 0 20px 0 0;
+  border: none;
 }
 .back {
   float: left;

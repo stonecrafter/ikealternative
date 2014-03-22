@@ -54,11 +54,11 @@ nav, #wrap:after {
 }
 nav {
   width: 700px;
-  /*position: absolute;*/
-  /*left: 0;
-  right: 0;
-  bottom: 0;*/
   margin: 0 auto;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: #222;
 }
 nav a {
@@ -169,20 +169,66 @@ h3 {
 
 /* Product Page Specific Styling */
 
+.product {
+  width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+.pic {
+  display: inline-block;
+  width: 400px;
+}
+.desc {
+  display: inline-block;
+  width: 300px;
+}
+.back {
+  float: left;
+}
 
+/*About Page Specific Styling */
+
+.around{
+   border-style: solid;
+   border-width: 1px;
+   width: 36px;
+   height: 36px;
+   border-radius: 18px;
+   text-align: center; 
+   margin-left: 50px;
+ }
+ 
+ .left{
+   float: left;
+ }
+ 
+ .point{
+	margin-left: 115px;
+   border-style: none;
+   font-size: 16px;
+ }
+ 
+ .abouter{
+   margin-top: 10px;
+ }
+ 
+ .lefter{
+   text-align: left;
+ }
+ 
+ .person{
+   width: 150px;
+   height: auto;
+   margin: 25px;
+   float: left;
+   position: relative;
+ }
+ 
+ 
 
 /* Media Queries for Responsive Layout */
 
 @media all and (max-width: 905px) {
-  html, body {
-    height: 100%;
-  }
-  nav {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
   .box {
     width: 70%;
   }

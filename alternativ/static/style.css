@@ -1,194 +1,234 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*
- *  Main Styling
- */
-
-*, *:before, *:after {
+* {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 html, body {
-	font-family: Helvetica, Arial, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%;
+  text-align: center;
+  font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
 }
-#container {
-  margin: 0 auto;
-  max-width: 900px;
-  width: 90%;
+#wrap {
+  min-height: 100%;
+  margin-bottom: -40px;
 }
-.tagline {
-	font-size:14px;
-	color:#999999;
-	letter-spacing:1px;
-
+#wrap:after {
+  content: "";
+  display: block;
 }
-nav{
-display:inline-block;
-float:right;
+#wrap {
+  position: relative;
 }
 h1 {
-	margin: 15px 0;
-	font-size: 28px;
-	display: inline-block;
-	letter-spacing: 3px;
-	font-weight: bold;
+  width: 700px;
+  color: #000;
+  font-size: 94px;
+  font-weight: bold;
+  margin: 10px auto 0;
+  padding: 0 0 10px;
+  letter-spacing: 20px;
+  border-bottom: 1px solid #333;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-h2 {
-	margin-top: 30px;
-	text-align: center;
-	letter-spacing: 2px;
-	font-size: 22px;
-}
-h3 {
-	margin: 30px 0;
-	font-size: 18px;
-}
-h4 {
-	display: block;
-	margin: 10px 0;
-	font-size: 16px;
-}
-#itembox {
-	margin: 30px auto;
-	text-align: center;
-	position:static;
-}
-#itembox2 {
-	margin: 30px auto;
-}
-.item {
-	width: 200px;
-	margin: 5px 10px;
-	display: inline-block;
-}
-.box {
-	height: 150px;
-	border: 1px solid #999999;
-	z-index: 100;
-	position: relative;
-}
-.box:hover {
-	background: #EEE;
-	cursor: pointer;
-}
-.label {
-	margin: 10px 0;
-	text-align: center;
-	font-size: 18px;
-	letter-spacing:2px;
-}
-.result {
-	margin-top: 30px;
-}
-.result-box {
-	width: 125px;
-	height: 125px;
-	display: inline-block;
-	border: 1px solid black;
-}
-.info {
-	width: 82%;
-	margin-left: 10px;
-	display: inline-block;
-	vertical-align: top;
-}
-.info h1 {
-	margin: 10px 0;
-	font-size: 30px;
-}
-.refine {
-	margin: 30px 0;
-}
-.return {
-	width: 150px;
-	margin: 5px 0;
-	padding: 10px 0;
-	background: #DDD;
-	text-align: center;
-	float: right;
-}
-.return:hover {
-	background: #EEE;
-	cursor: pointer;
-}
-a:link{
-	color:#0066CC;
-	text-decoration:none;
-	font-weight:bold;
-}
-a:visited {
-	color:#3399CC;
-	text-decoration:none;
-}
-.right {
-	float:right;
+h1:nth-child(2) {
+  display: none;
 }
 p {
-text-align:left;
+  width: 700px;
+  margin: 0 auto 25px;
+  padding: 10px 0;
+  color: #000;
+  font-size: 14px;
+  border-bottom: 1px solid #000;
+  letter-spacing: 1px;
+}
+.box {
+  width: 800px;
+  margin: 0 auto 10px;
+}
+nav, #wrap:after {
+  height: 40px;
+}
+nav {
+  width: 700px;
+  /*position: absolute;*/
+  /*left: 0;
+  right: 0;
+  bottom: 0;*/
+  margin: 0 auto;
+  background: #222;
+}
+nav a {
+  display: inline;
+  padding: 5px 10px;
+  float: right;
+  margin: 0;
+  color: #FFF;
+  line-height: 30px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+nav a:hover {
+  cursor: pointer;
+}
+.item {
+  display: inline-block;
+  width: 150px;
+  margin: 10px 20px;
+  padding: 5px;
+}
+.category {
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
 
+span {
+  color: #FFF;
+  display: block;
+  margin-top: 15px;
+  font: bold 18px 'Century Gothic', Helvetica, Arial, sans-serif;
+  text-align: center;
+  /*position: relative;*/
+  /*top: 0;*/
+  -ms-transform: translateY(0); /* IE 9 */
+  -webkit-transform: translateY(0); /* Chrome, Safari, Opera */
+  transform: translateY(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
-.left-column {
-	float: left;
-	width:40%;
-	position:relative;
-	display:inline-block;
-	
+.item:hover {
+  cursor: pointer;
 }
-.right-column {
-	float:right;
-	width:50%;
-	position:relative;
-	display:inline-block;
+.item:hover > .category {
+  /*top: -6px;*/
+  -ms-transform: translateY(-6px); /* IE 9 */
+  -webkit-transform: translateY(-6px); /* Chrome, Safari, Opera */
+  transform: translateY(-6px);
 }
-#other-options{
-position:static;
-display:block;
+.item:hover > span {
+  color: #000;
+}
+
+/* Category Page Specific Styling */
+
+h2 {
+  margin: 0 0 0 10px;
+  font-size: 26px;
+}
+h3 {
+  width: 668px;
+  margin: 0 auto 10px;
+  text-align: left;
+  font-size: 20px;
+}
+.result {
+  margin: 20px auto;
+}
+.choice {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+.suggestions .choice {
+  /*width: 200px;
+  height: 200px;*/
+}
+.info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.info > p {
+  width: 500px;
+  margin: 10px 0 0 10px;
+  padding: 0;
+  border: none;
+}
+.options {
+  width: 700px;
+  margin: 0 auto 10px;
+  text-align: left;
+}
+.options .item {
+  margin: 0 10px 5px;
+}
+.options span {
+  margin-top: 5px;
+  color: #000;
+}
+
+/* Product Page Specific Styling */
+
+
+
+/* Media Queries for Responsive Layout */
+
+@media all and (max-width: 905px) {
+  html, body {
+    height: 100%;
+  }
+  nav {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .box {
+    width: 70%;
+  }
+  .category {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media all and (max-width: 700px) {
+  nav {
+    width: 100%;
+  }
+  h1 {
+    display: none;
+    width: 90%;
+  }
+  h1:nth-child(2) {
+    display: block;
+  }
+  p {
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  span {
+    color: #000;
+  }
+  .box {
+    width: 80%;
+  }
+  .item {
+    width: 250px;
+  }
+  .category {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media all and (max-width: 420px) {
+  h1 {
+    display: none;
+  }
+  h1:nth-child(2) {
+    display: block;
+  }
+  p {
+    font-size: 18px;
+  }
 }

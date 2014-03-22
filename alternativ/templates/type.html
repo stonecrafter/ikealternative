@@ -3,48 +3,45 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Alternativs for {{item_type}}</title>
-	<link rel="stylesheet" href="{% static "style.css" %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&Aring;lternat&iuml;v</title>
+  <link rel="stylesheet" href="{% static "style.css" %}">
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1>Find Your ÅLTERNATÏV</h1>
-			<nav>
-				<a href="/">Home</a>  |  <a href="/">Back</a>  |  <a href="/about">About</a>
-			</nav>
-		</div>
-		<div class="result">
-			<h4>You selected:</h4>
-			<div class="result-box">
-				<img height="120" width="120" src="/static/00_{{code}}-01.svg" />
-			</div>
-			<div class="info">
-				<h1>{{item_type}}</h1>
-				<p>{{ikea_item}}</p>
-				<br>
-				<p>{{subj}}</p>
-			</div>
-		</div>
+  <div id="wrap">
+    <h1>&Aring;LTERNAT&Iuml;V</h1>
+    <h1>&Aring;LT</h1>
+    <div class="result">
+      <div class="choice">
+        <img src="/static/00_{{code}}-01.svg" alt="" width="150" height="150">
+      </div>
+      <div class="info">
+        <h2>{{item_type}}</h2>
+        <p>{{ikea_item}}</p>
+        <p>{{subj}}</p>
+      </div>
+    </div>
+    <div class="suggestions">
+      <h3>Recommended &Aring;lternat&iuml;vs</h3>
+      <div class="options">
+        {% for alt, store_code in alt_items.items %}
+        <a href="{{alt.id}}">
+          <div class="item">
+            <div class="choice">
+              <img src="/static/img/{{store_code}}_{{code}}-01.jpg" height="150"width="150" />
+            </div>
+            <span>{{alt.item_name}}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
-		<div class="suggestions">
-			<h3>Your IKEAlternatives...</h3>
-			{% for alt, store_code in alt_items.items %}
-			<a href="{{alt.id}}">
-				<div class="item">
-					<div class="box">
-						<img src="/static/img/{{store_code}}_{{code}}-01.jpg" height="150"/>
-					</div>
-					<div class="label">{{alt.item_name}}</div>
-				</div>
-			</a>
-			{% endfor %}
-		</div>
-			
-		
-		<div id="load"></div>
-	</div>
+  <nav>
+    <a href="/about">About</a>
+    <a href="/">Home</a>
+  </nav>
 </body>
 </html>

@@ -4,6 +4,7 @@ import mimetypes
 
 mimetypes.add_type("image/svg+xml", ".svg", True)
 
+# CHANGE DEBUG TO FALSE FOR DEPLOYMENT
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 

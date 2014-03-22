@@ -224,6 +224,10 @@ h3 {
    position: relative;
  }
  
+ .person h3 {
+	color:black;
+	text-align: center;
+ }
  
 
 /* Media Queries for Responsive Layout */

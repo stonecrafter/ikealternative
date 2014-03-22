@@ -291,17 +291,6 @@ h3 {
   vertical-align: middle;
   text-align: left;
 }
-.person {
- width: 150px;
- height: auto;
- margin: 25px;
- float: left;
- position: relative;
-}
-.person h3 {
-  color:black;
-  text-align: center;
-}
 
 /* Media Queries for Responsive Layout */
 

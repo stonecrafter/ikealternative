@@ -8,7 +8,7 @@ mimetypes.add_type("image/svg+xml", ".svg", True)
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
-ALLOWED_HOSTS = [".herokuapp.com"]
+ALLOWED_HOSTS = ["alternativ.herokuapp.com"]
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),

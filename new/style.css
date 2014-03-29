@@ -83,6 +83,7 @@ a {
   width: 150px;
   margin: 10px 20px;
   padding: 5px;
+  vertical-align: top;
 }
 .category {
   overflow: hidden;
@@ -326,11 +327,41 @@ h3 {
     width: 80%;
   }
   .item {
+    display: block;
     width: 250px;
+    margin: 0 auto;
+    padding: 0;
   }
   .category {
     width: 250px;
     height: 250px;
+  }
+  #wrap {
+    min-width: 100%;
+    margin-bottom: -60px;
+  }
+  nav, #wrap:after {
+    height: 60px;
+  }
+  nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .item:last-child {
+    margin-bottom: 20px;
+  }
+  #armchair, #dining {
+    margin-top: -10px;
+  }
+  #coffee, #desk, #bed {
+    margin-top: -20px;
+  }
+  #couch {
+    margin-top: -40px;
+  }
+  #shelf {
+    margin-top: 25px;
   }
 }
 @media all and (max-width: 420px) {
@@ -342,5 +373,9 @@ h3 {
   }
   p {
     font-size: 18px;
+  }
+  span {
+    margin-top: 20px;
+    font-size: 20px;
   }
 }

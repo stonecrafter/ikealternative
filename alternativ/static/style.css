@@ -376,11 +376,12 @@ h3 {
   #shelf {
     margin-top: 25px;
   }
-  .info h2 {
-    text-align: center;
-  }
   .info h2, .info p {
     margin: 10px 0 0 10px;
+  }
+  .info h2 {
+    margin: 0;
+    text-align: center;
   }
   .info p {
     width: 80%;

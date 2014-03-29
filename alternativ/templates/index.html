@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>&Aring;lternat&iuml;v</title>
   <link rel="stylesheet" href="{% static "style.css" %}">
+  <script type='application/javascript' src='{% static "fastclick.js" %}'></script>
+  <script>
+    window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+    }, false);
+  </script>
 </head>
 <body>
   <div id="wrap">
@@ -18,7 +24,7 @@
       <div class="item">
         <div class="category" id="{{type}}">
           <a href="/{{code}}">
-            <img src="static/00_{{code}}-01.svg" width="100%"/>
+            <img src="static/00_{{code}}-01.svg">
           </a>
         </div>
         <span>{{type}}</span>

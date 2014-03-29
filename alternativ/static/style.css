@@ -393,9 +393,15 @@ h3 {
   }
 }
 @media all and (max-width: 460px) {
+  .result .choice {
+    margin-top: -20px;
+  }
   .info {
     display: block;
     max-width: 100%;
+  }
+  .suggestions {
+    margin-bottom: 40px;
   }
   .options .item {
     display: block;

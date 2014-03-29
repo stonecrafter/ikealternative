@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>&Aring;lternat&iuml;v</title>
   <link rel="stylesheet" href="{% static "style.css" %}">
+  <script type='application/javascript' src='{% static "fastclick.js" %}'></script>
+  <script>
+    window.addEventListener('load', function() {
+      FastClick.attach(document.body);
+    }, false);
+  </script>
 </head>
 <body>
   <div id="wrap">

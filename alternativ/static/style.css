@@ -37,7 +37,7 @@ h1:hover {
   color: #222;
   cursor: pointer;
 }
-h1:nth-child(2) {
+.mini {
   display: none;
 }
 p {
@@ -324,7 +324,7 @@ h3 {
     display: none;
     width: 90%;
   }
-  h1:nth-child(2) {
+  .mini {
     display: block;
   }
   p {
@@ -496,7 +496,7 @@ h3 {
   h1 {
     display: none;
   }
-  h1:nth-child(2) {
+  .mini {
     display: block;
   }
   h2 {

@@ -247,7 +247,6 @@ h3 {
   display: inline-block;
   width: 380px;
   height: 170px;
-  margin-right: 210px;
   vertical-align: middle;
 }
 .retail {
@@ -398,6 +397,9 @@ h3 {
     margin: 0 auto 10px;
     text-align: center;
   }
+  .options .item {
+    margin: 20px auto;
+  }
   .pic, .desc, .retail, .map {
     display: block;
     margin: 0 auto;
@@ -473,7 +475,7 @@ h3 {
   .options .item {
     display: block;
     width: 250px;
-    margin: 20px auto;
+    
     padding: 0;
   }
   .options .choice {

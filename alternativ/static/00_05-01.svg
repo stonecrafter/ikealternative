@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="800px" height="600px" viewBox="0 0 800 600" enable-background="new 0 0 800 600" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" xml:space="preserve">
 <g id="Layer_2">
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="470" y1="344" x2="620" y2="279"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="470" y1="377" x2="620" y2="304.625"/>
-	<polygon fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="1" points="470,344 188.333,313 188.333,366 470,404 	
-		"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="570.984,328.298 620,333.417 620,213.875 
-		378,203.875 378,264.667 	"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="3" x1="620" y1="279" x2="378" y2="264.667"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="3" x1="188.333" y1="313" x2="378" y2="264.667"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="476.167,374.025 476.167,399.834 
-		468.646,403.817 	"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="624.666,210.333 624.666,331 
-		620.625,333.938 	"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="620" y1="213.875" x2="624.666" y2="210.333"/>
-	<polyline fill="none" stroke="#000000" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" points="379.022,202.857 
-		386.009,200.171 624.666,210.333 	"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="77.049" y1="93.869" x2="114.961" y2="77.441"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="77.049" y1="102.209" x2="114.961" y2="83.918"/>
+	<polygon fill="none" stroke="#000000" stroke-miterlimit="1" points="77.049,93.869 5.86,86.035 5.86,99.43 77.049,109.033 	"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M53.797,73.818"/>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="102.572,89.9 114.961,91.195 114.961,60.98 53.797,58.454 
+		53.797,70.496 	"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="3" x1="114.961" y1="77.441" x2="110.282" y2="77.164"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="3" x1="5.979" y1="86.062" x2="11.405" y2="84.622"/>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="78.607,101.459 78.607,107.98 76.771,109.124 	"/>
+	<polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="116.141,59.792 116.141,90.584 115.119,91.326 	"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="114.961" y1="60.98" x2="116.141" y2="59.792"/>
+	<polyline fill="none" stroke="#000000" stroke-linecap="square" stroke-miterlimit="10" points="54.056,58.196 55.821,57.518 
+		116.141,59.792 	"/>
 </g>
 <g id="Layer_3">
-	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" d="M598.666,264.532
-		L378,251.521l-164,37.313c-2.498,0.835-3.296,3.333-3.296,6.667v11.8l257.942,26.117l132.303-55.545v-9.226
-		C600.948,266.372,600.948,265.167,598.666,264.532"/>
-	
-		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="468.646" y1="333.417" x2="468.646" y2="320.358"/>
-	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M468.646,320.358c0-4.896,1.682-8.858,3.76-8.858"
-		/>
-	<path fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M472.406,311.5"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="472.406" y1="311.5" x2="598.666" y2="264.532"/>
-	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="472.406" y1="311.5" x2="217.593" y2="288.016"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M56.057,70.629l-2.26-0.133l-41.449,9.43
+		c-0.631,0.213-0.833,0.844-0.833,1.686v2.982l65.192,6.602l33.438-14.038v-2.332c0-0.574,0-0.88-0.576-1.039"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M78.854,71.975l-5.166-0.307"/>
+	<path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M109.568,73.785l-12.855-0.758"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M76.707,91.195v-3.301c0-1.238,0.342-1.86,0.95-2.238"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M77.657,85.656"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="77.657" y1="85.656" x2="109.568" y2="73.785"/>
+	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="77.657" y1="85.656" x2="13.255" y2="79.721"/>
 </g>
 <g id="Layer_4">
-	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M458.271,251.521
-		c-6.007,12.04-1.71,14.318-28.459,12.951l-24.476-1.429c-19.025,1.623-26.025-0.746-16.504-13.809l10.82-16.244
-		c4.939-13.769,4.939-11.902,23.439-11.019l22.279,1.855c26-1.736,27,0.75,18.516,17.839L458.271,251.521z"/>
-	<path fill="#FFFFFF" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M549.992,255.343
-		c-6.006,12.04-1.709,14.318-28.459,12.951l-24.476-1.429c-19.024,1.623-26.024-0.746-16.504-13.809l10.82-16.244
-		c4.94-13.769,4.94-11.902,23.44-11.019l22.278,1.855c26-1.736,27,0.75,18.517,17.839L549.992,255.343z"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M74.085,70.496c-1.519,3.043-0.433,3.619-7.192,3.273l-6.187-0.361
+		c-4.809,0.41-6.578-0.189-4.171-3.49l2.735-4.105c1.248-3.479,1.248-3.008,5.923-2.785l5.632,0.47
+		c6.571-0.438,6.823,0.188,4.68,4.51L74.085,70.496z"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M97.268,71.463c-1.519,3.043-0.433,3.617-7.192,3.273l-6.187-0.361
+		c-4.809,0.41-6.578-0.189-4.172-3.49l2.734-4.105c1.248-3.479,1.248-3.008,5.924-2.784l5.631,0.469
+		c6.571-0.438,6.824,0.188,4.68,4.509L97.268,71.463z"/>
 </g>
 </svg>

@@ -96,6 +96,8 @@ def options(request, item_type, item):
 	# get the item
 	item = Item.objects.get(id=item)
 	store = Store.objects.get(store_name=item.store_name)
+	# get the corresponding ikea item
+	ikea_name = Item.objects.get(id=item_type).item_name.upper()
 	# sanity check URL
 	correct_type = Item.TYPE_CHOICES[int(item_type) - 1][1].title()
 	if item.item_type != correct_type:
@@ -112,6 +114,8 @@ def options(request, item_type, item):
 		'price': item.price_multipler,
 		'store_name': item.store_name,
 		'item_link': item.item_link,
+		# ikea item
+		'ikea_name': ikea_name,
 		# store specific
 		'store_code': STORES[str(item.store_name).upper()],
 		'store_address': store.store_address,

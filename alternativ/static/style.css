@@ -96,7 +96,7 @@ a {
   transition: all 0.4s ease;
 }
 #armchair {
-  background: url(00_01-01.svg);
+  background: url(armchair-black.svg);
   background-size: contain;
 }
 #shelf {
@@ -171,9 +171,11 @@ h3 {
 }
 .choice {
   display: inline-block;
+  vertical-align: middle;
+}
+.result .choice img {
   width: 150px;
   height: 150px;
-  vertical-align: middle;
 }
 .info {
   display: inline-block;
@@ -193,6 +195,10 @@ h3 {
 }
 .options .item {
   margin: 0 10px 5px;
+}
+.options img {
+  width: 150px;
+  height: 150px;
 }
 .options span {
   margin-top: 5px;
@@ -220,11 +226,6 @@ h3 {
 .desc h2 {
   margin: -8px 0 0;
 }
-
-.desc a, .store a {
-  text-decoration: underline;
-  color: black;
-}
 .desc p {
   width: 380px;
   margin: 10px 0 0;
@@ -241,6 +242,7 @@ h3 {
   width: 170px;
   height: 170px;
   margin-right: 210px;
+  border: 1px solid black;
   vertical-align: middle;
 }
 .retail {
@@ -288,7 +290,7 @@ h3 {
 }
 .point {
   display: inline-block;
-  width: 620px;
+  width: 610px;
   margin-left: 10px;
   border: none;
   font-size: 16px;
@@ -321,6 +323,7 @@ h3 {
   }
   p {
     width: 90%;
+    max-width: 90%;
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -330,22 +333,130 @@ h3 {
   .box {
     width: 80%;
   }
-  .item {
+  .box .item {
+    display: block;
     width: 250px;
+    margin: 0 auto;
+    padding: 0;
   }
   .category {
     width: 250px;
     height: 250px;
   }
+  #wrap {
+    min-width: 100%;
+    margin-bottom: -60px;
+  }
+  nav, #wrap:after {
+    height: 60px;
+  }
+  nav a {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .item:last-child {
+    margin-bottom: 20px;
+  }
+  #armchair, #dining {
+    margin-top: -10px;
+  }
+  #coffee, #desk, #bed {
+    margin-top: -20px;
+  }
+  #couch {
+    margin-top: -40px;
+  }
+  #shelf {
+    margin-top: 25px;
+  }
+  .info h2 {
+    text-align: center;
+  }
+  .info h2, .info p {
+    margin: 10px 0 0 10px;
+  }
+  .info p {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  .suggestions h3 {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .options {
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 460px) {
+  .info {
+    display: block;
+    max-width: 100%;
+  }
+  .options .item {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .options .choice {
+    margin: 0;
+  }
+  .options img {
+    width: 180px;
+    height: 180px;
+  }
+  .options span {
+    margin: 10px 0;
+  }
 }
 @media all and (max-width: 420px) {
+  #wrap {
+    overflow-x: hidden;
+  }
   h1 {
     display: none;
   }
   h1:nth-child(2) {
     display: block;
   }
+  h2 {
+    width: 100%;
+  }
   p {
+    max-width: 100%;
     font-size: 18px;
+  }
+  span {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .result .choice, .suggestions .choice {
+    display: block;
+    width: 90%;
+    height: 180px;
+    margin: 0 auto 20px;
+  }
+  .result .choice img {
+    width: 180px;
+    height: 180px;
+  }
+  .info {
+    display: block;
+    max-width: 100%;
+  }
+  .suggestions, .options {
+    width: 420px;
+    max-width: 100%;
+  }
+  .options .choice {
+    margin-bottom: 5px;
+  }
+  .options span {
+    margin: 0;
   }
 }

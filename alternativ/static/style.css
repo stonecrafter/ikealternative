@@ -316,6 +316,14 @@ h3 {
     height: 120px;
   }
 }
+@media only screen and (-webkit-device-pixel-ratio: .75) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 1.5) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width: 768px) {
+  .item:hover > .category {
+    /* Fix disappearing images on touch screen scroll */
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 @media all and (max-width: 700px) {
   nav {
     width: 100%;

@@ -133,11 +133,6 @@ span {
   margin-top: 15px;
   font: bold 18px 'Century Gothic', Helvetica, Arial, sans-serif;
   text-align: center;
-  /*position: relative;*/
-  /*top: 0;*/
-  -ms-transform: translateY(0);
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -314,6 +309,14 @@ h3 {
   .category {
     width: 120px;
     height: 120px;
+  }
+}
+@media only screen and (-webkit-device-pixel-ratio: .75) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 1.5) and (max-device-width: 768px), only screen and (-webkit-device-pixel-ratio: 2) and (max-device-width: 768px) {
+  .item:hover > .category {
+    /* Fix disappearing images on touch screen scroll */
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 @media all and (max-width: 700px) {
